@@ -1,0 +1,33 @@
+/* Стилі виключно для сторінок входу та реєстрації. */
+
+/* Віконце по центру (контейнер) */
+.auth-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.logo-title {
+    margin-top: 0;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Текст під кнопкою */
+.switch-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}

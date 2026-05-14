@@ -1,0 +1,48 @@
+/*
+Стилі для відображення карток на екрані
+*/
+
+
+/* Сітка нотаток */
+.dashboard-container {
+    padding: 20px;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Дизайн самої картки нотатки */
+.note-card {
+    background-color: white;
+    height: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s; /* Плавна анімація */
+}
+
+/* При наведенні мишки картка трохи збільшується */
+.note-card:hover {
+    transform: scale(1.02);
+}
+
+/* Спеціальний дизайн для кнопки "Додати нотатку" */
+.add-note-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;
+    color: #6c757d;
+    border: 2px dashed #ced4da;
+    box-shadow: none;
+}
+
+.add-note-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}

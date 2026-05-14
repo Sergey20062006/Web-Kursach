@@ -1,0 +1,50 @@
+/*
+Поля вводу для пунктів і кольорові стани карток
+*/
+
+
+/* --- СТИЛІ ДЛЯ ПУНКТІВ ЧЕК-ЛИСТА (в модалці) --- */
+.todo-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.todo-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remove-todo-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.remove-todo-btn:hover {
+    color: #a71d2a;
+}
+
+/* --- СТАТУСИ КАРТОК (на екрані) --- */
+
+/* Виконаний чек-лист */
+.note-completed {
+    opacity: 0.6;
+    background-color: #f0f0f0;
+}
+
+.note-completed h3 {
+    text-decoration: line-through;
+    color: #666;
+}
+
+/* Активний чек-лист (в процесі) */
+.note-checklist-active {
+    background-color: #eef2ff;
+    border-left: 4px solid #6366f1;
+}

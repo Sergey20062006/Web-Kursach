@@ -1,0 +1,111 @@
+/*
+Все, що стосується вікна створення/редагування нотатки
+*/
+
+
+/* --- СТИЛІ МОДАЛЬНОГО ВІКНА --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 90%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+/* Поля всередині вікна */
+.modal-header-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#note-title {
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.mode-toggle {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+#note-text {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+/* Вирівнюємо квадратик і текст */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Пріоритет та Папка */
+.priority-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.priority-label {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+}
+
+#note-priority, #note-folder {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Нижня панель */
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.delete-btn {
+    color: #dc3545;
+}

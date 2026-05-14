@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kpishka - Вхід</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h1 class="logo-title">Kpishka</h1>
+
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Логін" required>
+            <input type="password" id="login-password" placeholder="Пароль" required>
+            <button type="submit" class="btn">Увійти</button>
+            <p class="switch-text">Немає акаунту? <a href="#" id="show-register">Зареєструватися</a></p>
+        </form>
+
+        <form id="register-form" style="display: none;">
+            <input type="text" id="reg-username" placeholder="Логін" required>
+            <input type="password" id="reg-password" placeholder="Пароль" required>
+            <input type="password" id="reg-password-confirm" placeholder="Підтвердження паролю" required>
+            <button type="submit" class="btn">Зареєструватися</button>
+            <p class="switch-text">Вже є акаунт? <a href="#" id="show-login">Увійти</a></p>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
